@@ -1,0 +1,23 @@
+@font-face {
+  font-family: "Karla-VariableFont";
+  src: url("/src/assets/fonts/Karla-Italic-VariableFont_wght.ttf")
+      format("woff2"),
+    url("/src/assets/fonts/Karla-VariableFont_wght.ttf") format("woff");
+  font-weight: 100 900;
+  font-style: normal;
+}
+
+@import "tailwindcss";
+
+@theme {
+  --font-display: "Karla-VariableFont", sans-serif;
+
+  --color-primary-green-200: hsl(148, 38%, 91%);
+  --color-primary-green-600: hsl(169, 82%, 27%);
+
+  --color-accent-red: hsl(0, 66%, 56%);
+
+  --color-neutral-100: hsl(0, 0%, 100%);
+  --color-grey-500: hsl(186, 15%, 59%);
+  --color-grey-900: hsl(187, 24%, 22%);
+}
