@@ -4,7 +4,7 @@ const FormInput = ({ id, label, error, className = "", ...props }) => {
   const generatedId = useId();
   const appliedId = id || generatedId;
   return (
-    <div className="w-full group">
+    <div className="w-full">
       <div className={`flex flex-col gap-2  ${className}`}>
         <label
           htmlFor={appliedId}
@@ -13,7 +13,7 @@ const FormInput = ({ id, label, error, className = "", ...props }) => {
         <input
           id={appliedId}
           {...props}
-          className={`w-full rounded-lg px-6 py-3  
+          className={`w-full rounded-lg px-6 py-3
             border border-gray-500 focus:outline-none focus:border-primary-green-600 ${className}`}
         />
       </div>
@@ -23,25 +23,3 @@ const FormInput = ({ id, label, error, className = "", ...props }) => {
 };
 
 export default FormInput;
-
-// import React, { useId } from "react";
-
-// const FormInput = ({ id, label, className = "", ...props }) => {
-//   const generatedId = useId();
-//   const appliedId = id || generatedId;
-
-//   return (
-//     <div className={` flex flex-col gap-2 `}>
-//       <label htmlFor={appliedId} className="text-gray-900 text-base">
-//         {label} {props.required && "*"}
-//       </label>
-//       <input
-//         id={appliedId}
-//         {...props}
-//         className={`border border-gray-500 rounded-xl px-6 py-3 ${className}`}
-//       />
-//     </div>
-//   );
-// };
-
-// export default FormInput;

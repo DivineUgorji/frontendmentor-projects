@@ -156,7 +156,7 @@ const FormContactCard = () => {
           onChange={(event) =>
             setFormData({ ...formData, message: event.target.value })
           }
-          className="min-h-[6rem]"
+          className="w-full p-0 min-h-[6rem] align-top leading-snug resize-none"
           error={errors.message}
         />
         <CheckButton
