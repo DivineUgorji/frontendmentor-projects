@@ -1,12 +1,16 @@
 import React from "react";
+// eslint-disable-next-line no-unused-vars
+import { motion } from "motion/react";
 
 const Button = ({ children, className = "" }) => {
   return (
-    <button
-      className={`w-full py-4 px-[18.5rem] font-bold rounded-xl ${className}`}
+    <motion.button
+      whileHover={{ scale: 0.9 }}
+      whileTap={{ scale: 0.95 }}
+      className={`block py-4 w-full font-bold rounded-xl cursor-pointer ${className}`}
     >
-      {children}
-    </button>
+      <span> {children}</span>
+    </motion.button>
   );
 };
 
