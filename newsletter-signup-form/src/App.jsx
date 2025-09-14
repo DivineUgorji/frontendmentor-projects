@@ -1,9 +1,12 @@
 import React from "react";
+import Main from "./pages/Main";
+import Header from "./pages/Header/Header";
 
 const App = () => {
   return (
     <div>
-      <h1>Newsletter form </h1>
+      <Header />
+      <Main />
     </div>
   );
 };

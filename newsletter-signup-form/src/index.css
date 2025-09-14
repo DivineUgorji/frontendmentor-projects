@@ -1,3 +1,11 @@
+@font-face {
+  font-family: "Roboto";
+  src: url("/src/assets/fonts/Roboto-Bold.ttf") format("truetype"),
+    url("/src/assets/fonts/Roboto-Regular.ttf") format("truetype");
+  font-weight: 100 900;
+  font-style: normal;
+}
+
 @import "tailwindcss";
 
 @layer base {
@@ -59,12 +67,23 @@
   h6 {
     text-wrap: balance;
   }
+}
 
-  /*
-  10. Create a root stacking context
-*/
-  #root,
-  #__next {
-    isolation: isolate;
-  }
+@theme {
+  --font-display: "Roboto", sans;
+
+  --color-primary-tomato: hsl(4, 100%, 67%);
+
+  --color-dark-slate-grey: hsl(234, 29%, 20%);
+  --color-charcoal-grey: hsl(235, 18%, 26%);
+  --color-neutral-grey: hsl(231, 7%, 60%);
+  --color-neutral-100: hsl(0, 0%, 100%);
+
+  --color-bg-gradient: bg-linear-to-r from-cyan-500 to-blue-500
+
+  --color-gradient-one: #FF6A3A;
+  --color-grdient-two: #FF527B;
+
+  --breakpoint-lgx: 37.5rem;
+  --breakpoint-smx: 25rem;
 }
