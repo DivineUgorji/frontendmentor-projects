@@ -1,0 +1,64 @@
+/* plus-jakarta-sans-500 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Plus Jakarta Sans";
+  font-style: normal;
+  font-weight: 500;
+  src: url("../fonts/plus-jakarta-sans-v12-latin-500.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* plus-jakarta-sans-600 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Plus Jakarta Sans";
+  font-style: normal;
+  font-weight: 600;
+  src: url("../fonts/plus-jakarta-sans-v12-latin-600.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* plus-jakarta-sans-700 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Plus Jakarta Sans";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/plus-jakarta-sans-v12-latin-700.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* plus-jakarta-sans-800 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Plus Jakarta Sans";
+  font-style: normal;
+  font-weight: 800;
+  src: url("../fonts/plus-jakarta-sans-v12-latin-800.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+@import "tailwindcss";
+
+@theme {
+  --font-display: "Plus Jakarta Sans", sans-serif;
+  --color-blue-900: hsl(233, 54%, 16%);
+  --color-blue-600: hsl(234, 25%, 52%);
+  --color-pink-600: hsl(341, 92%, 62%);
+  --color-pink-300: hsl(341, 100%, 83%);
+  --color-grey: hsl(232, 10%, 56%);
+  --color-white: hsl(0, 0%, 100%);
+}
+
+@layer components {
+  .wrapper {
+    padding-inline: 20px;
+  }
+
+  @media (width >= 48em) {
+    .wrapper {
+      padding-inline: 44px;
+    }
+  }
+
+  @media (width >= 75em) {
+    .wrapper {
+      max-width: 70rem;
+      margin-inline: auto;
+      padding-inline: 0;
+    }
+  }
+}
