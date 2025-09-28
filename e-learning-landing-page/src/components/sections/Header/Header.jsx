@@ -1,6 +1,6 @@
 import React from "react";
 import Button from "../../UI/Button";
-import logo from "../../../assets/images/logo-dark.svg";
+import logo from "@assets/images/logo-dark.svg";
 
 const Header = () => {
   return (

@@ -33,6 +33,22 @@
 
 @import "tailwindcss";
 
+@layer base {
+  h1,
+  h2,
+  h3 {
+    font-weight: 800;
+    color: var(--color-blue-900);
+    line-height: 1.2;
+  }
+
+  p {
+    color: var(--color-grey);
+    line-height: 1.5;
+    max-width: 32ch;
+  }
+}
+
 @theme {
   --font-display: "Plus Jakarta Sans", sans-serif;
   --color-blue-900: hsl(233, 54%, 16%);
@@ -41,6 +57,69 @@
   --color-pink-300: hsl(341, 100%, 83%);
   --color-grey: hsl(232, 10%, 56%);
   --color-white: hsl(0, 0%, 100%);
+
+  --color-gradient-pink: linear-gradient(
+    hsl(13, 100%, 64%),
+    hsl(322, 87%, 55%)
+  );
+
+  --color-gradient-purple: linear-gradient(
+    hsl(237, 100%, 64%),
+    hsl(322, 87%, 55%)
+  );
+
+  --color-course-gradient: linear-gradient(
+    hsl(0, 0%, 100%),
+    hsl(236, 100%, 97%)
+  );
+
+  --text-fs-1: clamp(
+    2.5rem,
+    0.4230769230769229rem + 4.102564102564102vw,
+    3.5rem
+  );
+
+  --text-fs-2: clamp(2rem, 0.9615384615384615rem + 2.051282051282051vw, 2.5rem);
+  --text-fs-3: clamp(
+    1.5rem,
+    0.46153846153846145rem + 2.051282051282051vw,
+    2rem
+  );
+
+  --text-fs-4: clamp(
+    1.25rem,
+    0.7307692307692307rem + 1.0256410256410255vw,
+    1.5rem
+  );
+
+  --text-fs-5: 1.125rem;
+  --text-fs-6: clamp(
+    0.875rem,
+    0.6153846153846154rem + 0.5128205128205128vw,
+    1rem
+  );
+
+  --text-fs-7: 1.125rem;
+}
+
+@layer utilities {
+  .bg-gradient-pink {
+    background-image: var(--color-gradient-pink);
+  }
+
+  .bg-gradient-purple {
+    background-image: var(--color-gradient-purple);
+  }
+
+  .bg-courses-gradient {
+    @apply bg-[linear-gradient(#fff,_#f0f1ff_40%)];
+  }
+  /* 
+  .grid-template {
+    display: grid;
+    gap: 24px;
+    grid-template-rows: min-content 1fr min-content;
+  } */
 }
 
 @layer components {

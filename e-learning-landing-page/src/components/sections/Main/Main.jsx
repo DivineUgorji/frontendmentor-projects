@@ -1,9 +1,12 @@
 import React from "react";
+import HeroSection from "../HeroSection";
+import CourseSection from "../CourseSection";
 
 const Main = () => {
   return (
-    <main>
-      <h1>Hello this is main page</h1>
+    <main className="overflow-x-clip">
+      <HeroSection />
+      <CourseSection />
     </main>
   );
 };
