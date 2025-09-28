@@ -4,6 +4,8 @@ A modern and responsive React + Tailwind CSS landing page that showcases feature
 
 ![](./src/assets/design/preview.jpg)
 
+[🔗 View Demo](https://skilled-landing-page-gbky.onrender.com)
+
 ### 🚀 Features
 
 - Built with React and Tailwind CSS
