@@ -29,15 +29,15 @@ const HeroSection = () => {
       md:-z-10 lg:translate-x-[43%] lg:translate-y-[-27%]"
       >
         <source
-          srcset={desktopHeroImg}
-          media="(width >= 1024px)"
+          srcSet={desktopHeroImg}
+          media="(min-width: 1024px)"
           width="2092"
           height="1876"
         />
 
         <source
-          srcset={tabletHeroImg}
-          media="(width >= 768px)"
+          srcSet={tabletHeroImg}
+          media="(min-width: 768px)"
           width="695"
           height="723"
         />
