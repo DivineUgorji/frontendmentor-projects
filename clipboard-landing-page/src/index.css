@@ -1,0 +1,73 @@
+/* bai-jamjuree-regular - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Bai Jamjuree";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/bai-jamjuree-v13-latin-regular.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* bai-jamjuree-600 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Bai Jamjuree";
+  font-style: normal;
+  font-weight: 600;
+  src: url("../fonts/bai-jamjuree-v13-latin-600.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* bai-jamjuree-700 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Bai Jamjuree";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/bai-jamjuree-v13-latin-700.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+@import "tailwindcss";
+
+@layer base {
+  p {
+    color: var(--color-grayish-blue);
+    font-size: var(----text-fs-4);
+    line-height: 1.5;
+    letter-spacing: 0.12px;
+  }
+}
+
+@theme {
+  --color-strong-cyan: hsl(171, 66%, 44%);
+  --color-light-blue: hsl(233, 100%, 69%);
+  --color-dark-grayish-blue: hsl(210, 10%, 33%);
+  --color-grayish-blue: hsl(201, 11%, 66%);
+
+  --font-display: "Bai Jamjuree", sans-serif;
+
+  --text-fs-1: clamp(
+    2rem,
+    1.4912790697674418rem + 2.1705426356589146vw,
+    2.875rem
+  );
+
+  ----text-fs-2: clamp(
+    1.75rem,
+    1.4593023255813953rem + 1.2403100775193798vw,
+    2.25rem
+  );
+
+  ----text-fs-3: 1.5rem;
+
+  ----text-fs-4: 1.125rem;
+}
+
+/* .bg-desktop-header {
+  @apply bg-[url('../assets/images/bg-header-desktop.png'), linear-gradient(to_right, var(--color-dark-grayish-blue), var(--color-grayish-blue))];
+
+  @apply bg-[url('../assets/images/bg-header-desktop.png'),linear-gradient(to_bottom,var(--color-dark-grayish-blue),var(--color-grayish-blue))];
+   bg-[url('../assets/images/bg-header-desktop.png')];
+} */
+
+/* @utility {
+  .bg-desktop-header {
+   bg-[url('../assets/images/bg-header-desktop.png')];
+}
+} */
