@@ -1,11 +1,17 @@
 import React from "react";
 import Hero from "../sections/Hero";
+import Features from "./Features";
+import AccessFeature from "./AccessFeature";
 
 const Home = () => {
   return (
-    <main className="">
-      <h1>This is home</h1>
+    <main
+      className="bg-[url('/src/assets/images/bg-header-mobile.png')] lg:bg-[url('/src/assets/images/bg-header-desktop.png')] 
+    h-screen bg-no-repeat bg-center bg-cover"
+    >
       <Hero />
+      <Features />
+      <AccessFeature />
     </main>
   );
 };

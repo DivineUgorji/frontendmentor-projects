@@ -4,20 +4,24 @@ import Button from "../UI/Button/Button";
 
 const Hero = () => {
   return (
-    <div className="">
-      <img src={logo} alt="logo" />
-      <h1 className="font-medium text-fs-1">
+    <section className="wrapper flex flex-col items-center text-center pt-[8rem]">
+      <img src={logo} alt="logo" className="w-[125px] h-[125px]" />
+      <h1 className="font-normal text-fs-1 pt-[3.5rem]">
         A history of everything you copy
       </h1>
-      <p>
+      <p className="pt-4">
         Clipboard allows you to track and organize everything you copy.
         Instantly access your clipboard on all your devices.
       </p>
-      <div className="flex gap-4 items-center">
-        <Button className="bg-strong-cyan text-white">Download for IOS</Button>
-        <Button className="bg-light-blue text-white">Download for Mac</Button>
+      <div className="flex flex-col md:flex-row justify-center w-full gap-4 items-center pt-[3rem]">
+        <Button className="bg-strong-cyan text-white hover:opacity-75">
+          Download for IOS
+        </Button>
+        <Button className="bg-light-blue text-white hover:opacity-75">
+          Download for Mac
+        </Button>
       </div>
-    </div>
+    </section>
   );
 };
 
