@@ -2,6 +2,9 @@ import React from "react";
 import Hero from "../sections/Hero";
 import Features from "./Features";
 import AccessFeature from "./AccessFeature";
+import Intergration from "./Intergration";
+import CustomerBrands from "./CustomerBrands";
+import Footer from "./Footer";
 
 const Home = () => {
   return (
@@ -12,6 +15,9 @@ const Home = () => {
       <Hero />
       <Features />
       <AccessFeature />
+      <Intergration />
+      <CustomerBrands />
+      <Footer />
     </main>
   );
 };

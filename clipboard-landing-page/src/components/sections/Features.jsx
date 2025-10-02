@@ -85,7 +85,7 @@
 
 import React from "react";
 import featureImg from "../../assets/images/image-computer.png";
-import features from "../../../contents";
+import { features } from "../../../contents";
 
 const Features = () => {
   return (
@@ -109,7 +109,9 @@ const Features = () => {
           <img
             src={featureImg}
             alt="desktop computer screen"
-            className="justify-self-center md:absolute md:left-0 md:translate-x-[-25%] md:translate-y-[-42%] w-[312px] h-[238px] md:w-[512px] md:h-[450px] lg:w-[752px] lg:h-[572px]"
+            className="justify-self-center md:absolute md:left-0 md:translate-x-[-25%] 
+            md:translate-y-[-42%] w-[312px] h-[238px] md:w-[512px] 
+            md:h-[450px] lg:w-[752px] lg:h-[572px]"
           />
         </div>
 
