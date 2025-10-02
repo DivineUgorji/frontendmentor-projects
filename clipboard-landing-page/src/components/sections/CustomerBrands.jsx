@@ -21,10 +21,10 @@ const CustomerBrands = () => {
           with iCloud and you’re ready to start adding to your clipboard.
         </p>
         <div className="flex flex-col md:flex-row gap-6 pt-[3rem]">
-          <Button className="bg-strong-cyan hover:opacity-75">
+          <Button className="bg-strong-cyan text-white hover:opacity-75">
             Download for iOS
           </Button>
-          <Button className="bg-light-blue hover:opacity-75">
+          <Button className="bg-light-blue text-white hover:opacity-75">
             Download for Mac
           </Button>
         </div>
