@@ -13,7 +13,7 @@ The project demonstrates reusable components, responsive layouts, and clean styl
 
 ### 🌍 Deployment
 
-[👉 Live Demo Link ↗]()
+[👉 Live Demo Link ↗](https://divine-clipboard-landing-page.onrender.com)
 
 ---
 
